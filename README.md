@@ -1,4 +1,4 @@
-#🌐 Personal Portfolio Website
+🌐 Personal Portfolio Website
 
 A responsive personal portfolio website designed to showcase my skills, projects, certifications, and contact information. This portfolio acts as a digital resume and highlights my journey as a developer.
 
