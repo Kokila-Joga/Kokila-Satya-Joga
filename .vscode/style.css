@@ -1,0 +1,215 @@
+/* ========= General Reset ========= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+.about-image img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ========= Body – Sky Blue Gradient ========= */
+body {
+    background: linear-gradient(
+        135deg,
+        #87CEEB,   /* Sky Blue */
+        #6dd5fa,   /* Light Blue */
+        #b3e5fc    /* Soft Blue */
+    );
+    color: #0a2540;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ========= Header ========= */
+header {
+    background: linear-gradient(90deg, #4facfe, #00c6ff);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+/* ========= Navigation ========= */
+nav {
+    margin-top: 15px;
+}
+
+.button {
+    background: white;
+    color: #0077b6;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background: #00c6ff;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* ========= Sections ========= */
+section {
+    background: rgba(255, 255, 255, 0.85);
+    margin: 30px auto;
+    padding: 25px;
+    width: 85%;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 119, 182, 0.25);
+}
+
+/* ========= About Section ========= */
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #00c6ff;
+    object-fit: cover;
+}
+
+/* ========= Skills ========= */
+ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+/* ========= Skill Bars ========= */
+.skill {
+    margin: 15px 0;
+}
+
+.skill p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 18px;
+    background: #e3f2fd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    border-radius: 20px;
+    animation: fillBar 2s forwards;
+}
+
+.python { background: linear-gradient(90deg, #4facfe, #00c6ff); width: 85%; }
+.java   { background: linear-gradient(90deg, #00b4d8, #48cae4); width: 80%; }
+.c      { background: linear-gradient(90deg, #3a86ff, #4cc9f0); width: 75%; }
+.ds     { background: linear-gradient(90deg, #4361ee, #4895ef); width: 70%; }
+
+@keyframes fillBar {
+    from { width: 0; }
+}
+
+/* ========= Table ========= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: #0a2540;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(90deg, #4facfe, #00c6ff);
+    color: white;
+}
+
+/* ========= Form ========= */
+form div {
+    margin: 10px 0;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #90caf9;
+}
+
+.submit {
+    background: linear-gradient(45deg, #4facfe, #00c6ff);
+    border: none;
+    padding: 10px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background: linear-gradient(45deg, #00c6ff, #4facfe);
+    transform: scale(1.1);
+}
+
+/* ========= Certifications ========= */
+.cert-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cert-list li {
+    background: #e3f2fd;
+    color: #0a2540;
+    margin: 10px 0;
+    padding: 12px;
+    border-left: 6px solid #00c6ff;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cert-list li:hover {
+    transform: translateX(10px);
+    background: #bbdefb;
+}
+
+/* ========= Fixed Top Button ========= */
+.fixedbutton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: linear-gradient(45deg, #4facfe, #00c6ff);
+    border: none;
+    padding: 14px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+/* ========= Footer ========= */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #4facfe, #00c6ff);
+    color: white;
+    margin-top: 30px;
+    border-radius: 20px 20px 0 0;
+}
